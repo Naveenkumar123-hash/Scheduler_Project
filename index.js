@@ -8,13 +8,13 @@ app.use(bodyParser.json());
 
 let events = [];
 
-const corsOptions = {
-    origin: 'https://scheduler-project.vercel.app', 
-    methods: ['GET', 'POST'],
-    credentials: true, 
-};
+// const corsOptions = {
+//     origin: 'https://scheduler-project.vercel.app', 
+//     methods: ['GET', 'POST'],
+//     credentials: true, 
+// };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
 
 app.post('/add-event', (req, res) => {
