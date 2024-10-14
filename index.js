@@ -34,6 +34,10 @@ app.post('/add-event', (req, res) => {
     res.status(201).send({ start_time, end_time });
 });
 
+app.get('/',(req,res)=>{
+    res.send({message:'baseroute',status:200})
+})
+
 app.get('/events', (req, res) => {
     res.json(events);
 });
